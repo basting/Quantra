@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.w3schools.com" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3schools.com">
+	<xs:element name="TRANSACTIONAL_DETAILS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TRANSACTION">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ITEMS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CUSTOMER_NAME" type="xs:string" />
+										<xs:element name="ITEM_NAME" type="xs:string" />
+										<xs:element name="COMPANY_NAME" type="xs:string" />
+										<xs:element name="QUANTITY" type="xs:integer" />
+										<xs:element name="PRICE" type="xs:integer" />
+										<xs:element name="CASHREGISTER" type="xs:integer" />
+										<xs:element name="ACCOUNTANT_NAME" type="xs:string" />
+										<xs:element name="BILL_NO" type="xs:integer" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="TOTAL_AMOUNT" type="xs:integer" />
+						</xs:sequence>
+						<xs:attribute name="DATE" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+

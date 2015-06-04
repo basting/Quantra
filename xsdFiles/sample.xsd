@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="account" type="account_type">
+		</xs:element>
+	<xs:complexType name="bank_account">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="date_of_birth" type="xs:date" />
+			<xs:element name="type" type="account_type" />
+			<xs:element name="balance" type="xs:integer" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="account_type">
+		<xs:choice>
+			<xs:element name="savings" type="xs:boolean" />
+			<xs:element name="current" type="xs:boolean" />
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

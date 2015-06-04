@@ -1,0 +1,11 @@
+1.what are the train tickets available from Bangalore to Trivandrum.
+2.which are the trains available to Trivandrum on 12/02/05.
+3.which are the trains available to Trivandrum on 12-02-05.
+4.which is the train on 12-02-05 to Trivandrum.
+5.which is the train going to Trivandrum at 4pm
+6.which is the train going to Trivandrum at 4 pm
+7.Give the names of trains going to Trivandrum.
+8.How much is the ticket charge to Trivandrum.
+9.who are the passengers going to Chennai via Kottayam.
+10.what is the name of the train going to chennai via Kottayam.
+11.what are the name of the passenger going to Chennai on 12-05-05.

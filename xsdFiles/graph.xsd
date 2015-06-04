@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="graph">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="directed" type="xs:boolean" />
+				<xs:element name="vertex" type="vertex_type" maxOccurs="100" />
+				<xs:element name="edge" type="edge_type" maxOccurs="10000" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="vertex_type">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="location" type="point_type" />
+			<xs:element name="size" type="point_type" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="edge_type">
+		<xs:sequence>
+			<xs:element name="from" type="xs:string" />
+			<xs:element name="to" type="xs:string" />
+			<xs:element name="weight" type="xs:integer" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="point_type">
+		<xs:sequence>
+			<xs:element name="x" type="xs:integer" />
+			<xs:element name="y" type="xs:integer" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
+
+

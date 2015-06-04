@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/jaxen-1.0-FCS/jaxen-full.jar"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/jaxen-1.0-FCS/lib/saxpath.jar"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/jaxen-1.0-FCS/lib/dom4j-core.jar"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/GFC4J/gfc.jar"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/jwnl13rc3/commons-logging.jar"/>
+    <classpathentry kind="lib" path="C:/BASTINGH/jwnl13rc3/jwnl.jar"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

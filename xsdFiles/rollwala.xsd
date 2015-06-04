@@ -1,0 +1,65 @@
+<?xml version="1.0"  ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="college">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="student"  type="student_type"    maxOccurs="200"/>
+<xs:element name="teacher"  type="teacher_type"  maxOccurs="20"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="person_info">
+<xs:sequence>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="age" >
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="20" />
+<xs:totalDigits value="2" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element name="address" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="student_type">
+<xs:complexContent>
+<xs:extension base="person_info">
+<xs:sequence>
+<xs:element name="course" type="xs:string"/>
+<xs:element name="fee">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:enumeration value="1100"/>
+<xs:enumeration value="2100"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="teacher_type">
+<xs:complexContent>
+<xs:extension base="person_info">
+<xs:sequence>
+<xs:element name="qualification" type="xs:string"/>
+<xs:element name="salary">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="8000"/>
+<xs:totalDigits value="5"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+</xs:schema>

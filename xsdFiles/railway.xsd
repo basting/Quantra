@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="railway">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="train" type="TrainDetails" maxOccurs="50"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:complexType name="TrainDetails">
+	<xs:sequence>
+		<xs:element name="name" type="xs:string"/>
+		<xs:element name="no" type="xs:integer"/>
+		<xs:element name="from" type="xs:string"/>
+		<xs:element name="to" type="xs:string"/>
+		<xs:element name="type" type="xs:string"/>
+		<xs:element name="time" type="xs:time"/>
+		<xs:element name="duration" type="xs:decimal"/>
+		<xs:element name="reservation" type="Reservation_Details" maxOccurs="100"/>
+		<xs:element name="route" type="RouteDetails"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="RouteDetails">
+	<xs:sequence>
+		<xs:element name="via" type="xs:string"/>
+		<xs:element name="length" type="xs:decimal"/>
+		<xs:element name="no_of_stations" type="xs:integer"/>
+		<xs:element name="starting_zone" type="Zone_Details"/>
+		<xs:element name="ending_zone" type="Zone_Details"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="Reservation_Details">
+	<xs:sequence>
+		<xs:element name="serial_no" type="xs:integer"/>
+		<xs:element name="date" type="xs:date"/>
+		<xs:element name="class" type="xs:string"/>
+		<xs:element name="from" type="xs:string"/>
+		<xs:element name="to" type="xs:string"/>
+		<xs:element name="passenger" type="Person_Details" maxOccurs="10"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="Person_Details">
+	<xs:sequence>
+		<xs:element name="name" type="xs:string"/>
+		<xs:element name="age" type="xs:integer"/>
+		<xs:element name="sex" type="xs:string"/>
+		<xs:element name="address" type="xs:string"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="Zone_Details">
+	<xs:sequence>
+		<xs:element name="name" type="xs:string"/>
+		<xs:element name="no_of_states" type="xs:decimal"/>
+	</xs:sequence>
+</xs:complexType>
+</xs:schema>

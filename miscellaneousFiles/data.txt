@@ -1,0 +1,13 @@
+don't=do not
+doesn't=does not
+didn't=did not
+hasn't=has not
+haven't=have not
+hadn't=had not
+can't=cannot
+won't=will not
+weren't=were not
+shan't=shall not
+shouldn't=should not
+wouldn't=would not
+wasn't=was not

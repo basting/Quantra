@@ -1,0 +1,8 @@
+International Business Machine=IBM
+Indian Institute of Technology=IIT
+Indian Institute of Management=IIM
+Indian Institute of Science=IISc
+National Institute of Technology=NIT
+Sree Chitra Thirunal College of Engineering=SCT
+State Bank of Travancore=SBT
+State Bank of India=SBI
