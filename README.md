@@ -1,0 +1,9 @@
+# Quantra / Natural language Interface to Databases
+
+“Natural language Interface to Databases” is the front end to a database which converts a natural language query taken in as the input to its corresponding database query statement which can be used to query the database. The present implementation has English as the Natural Language and XML Database as the data store for querying. The XML database uses XPath as its query Language. Thus, the Natural Language has to be converted to XPath query. 
+
+The process of conversion involves certain steps.
+
+First, the input English expression is fed to a Link Grammar Parser, the output of which is used to populate the Syntax graph. The Syntax graph contains Vertices which contains the words in the input English expression and Edges contains the relationship between words which is obtained from the Link Parser. Second, an XSD file is used to populate a Semantic graph, which acts as our Knowledge base. This is done because the semantics of a XML file is specified by an XSD file. The crux of this project is that it used the relationships between the English sentence structure and the Semantic graph in deciding the semantics of each keyword. Using the two graphs, certain processing are done and finally the XPath equivalent of the English query is found out. This query is used to query against the XML database and return the results.
+
+The project is developed on Eclipse Platform. The Graph Foundation Classes (GFC) is used to populate the graphs. Standard Widget Toolkit (SWT) is used to build the user interface which helps in getting knowledge from the knowledge engineer. ‘WordNet’ is used to obtain synonyms of words in the English expression. The project uses JNI to communicate to the Link Parser which is implemented in C programming language.
